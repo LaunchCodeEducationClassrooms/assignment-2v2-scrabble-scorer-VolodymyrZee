@@ -26,14 +26,16 @@ function oldScrabbleScorer(word) {
  
 	  }
 	}
-	return letterPoints;
+	return console.log(letterPoints);
  }
 
 // your job is to finish writing these functions and variables that we've named //
 // don't change the names or your program won't work as expected. //
 
 function initialPrompt() {
-   console.log("Let's play some scrabble! Enter a word:");
+   console.log("Let's play some scrabble!\n");
+   let wrd = input.question("Enter a word to score: ");
+   oldScrabbleScorer(wrd);
 };
 
 let simpleScore;
